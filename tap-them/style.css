@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+}
+
+#canvas {
+  background: #eee;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.element {
+  border: 2px solid #111;
+  background: #eee;
+  width: 10vh;
+  height: 10vh;
+  position: absolute;
+}
+
+.square {
+  border-radius: 5px;
+}
+
+.circle {
+  border-radius: 100%;
+}
+
+.tile {
+  border-radius: 5px;
+  transform: rotate(45deg);
+}
+
+button {
+  position: absolute;
+  display: block;
+  font-family: Arial;
+  font-size: 40vw;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.fadeOut {
+  pointer-events: none;
+  z-index: -1;
+  transition: 0.5s;
+  opacity: 0;
+  transform: scale(5, 5) rotate(180deg);
+}
